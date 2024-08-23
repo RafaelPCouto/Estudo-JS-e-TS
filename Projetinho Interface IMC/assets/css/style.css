@@ -22,8 +22,28 @@ body {
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabela-imc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-titulos {
+  font-weight: bold;
+}
+
+.paragrafo-resultado, .bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
 }
 
 form input, form label, form button {
