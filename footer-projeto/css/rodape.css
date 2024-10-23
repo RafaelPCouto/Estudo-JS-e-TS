@@ -1,0 +1,137 @@
+footer {
+    /* background-color: #537902; */
+    background-color: var(--verde-principal);
+    padding: 10px 0; /* Adiciona um pouco de espaçamento dentro do footer */
+    justify-content: space-around;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+}
+
+input {
+    height: 32px;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+nav {
+    padding-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.form {
+    width: 30%;
+}
+
+.form-control {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #949494;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.arrow-icon {
+    margin-bottom: 2px;
+}
+
+.icon-socials {
+    width: 25px;
+    height: 25px;
+}
+
+#btn-enviar {
+    background-color: #c2bebd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    border-radius: 50px;
+}
+
+#textarea {
+    height: 70px;
+    border-radius: 13px;
+    width: 100%;
+    word-wrap: break-word;
+    resize: vertical;
+}
+
+/* Responsividade para tablets: max-width: 768px */
+@media (max-width: 768px) {
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    #input1 {
+        margin-bottom: 10px;
+    }
+    
+    .form {
+        width: 60%;
+    }
+
+    .footer-links{
+        gap: 20px;
+    }
+}
+
+/* Responsividade para celulares: max-width: 576px */
+@media (max-width: 576px) {
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-links .gap-2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #btn-enviar {
+        width: 30%;
+        border-radius: 20px;
+    }
+
+    #input1 {
+        margin-bottom: 10px;
+    }
+}
